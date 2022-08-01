@@ -1,0 +1,114 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>SignUp</h1>
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+          <div class="form-group">
+            <label for="exampleInputFirstName">First Name</label>
+            <input
+              formControlName="firstName"
+              type="text"
+              class="form-control"
+              id="exampleInputFirstName"
+              aria-describedby="emailHelp"
+              placeholder="First Name"
+            />
+            <span
+            class="text-danger"
+            *ngIf="
+              signupForm.controls['firstName'].dirty &&
+              signupForm.hasError('required', 'firstName')
+            "
+          >
+            *First Name is required
+          </span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputLastName">Last Name</label>
+            <input
+              formControlName="lastName"
+              type="text"
+              class="form-control"
+              id="exampleInputLastName"
+              aria-describedby="emailHelp"
+              placeholder="Last Name"
+            />
+            <span
+            class="text-danger"
+            *ngIf="
+              signupForm.controls['lastName'].dirty &&
+              signupForm.hasError('required', 'lastName')
+            "
+          >
+            *Last Name is required
+          </span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputUserName">User Name</label>
+            <input
+              formControlName="userName"
+              type="text"
+              class="form-control"
+              id="exampleInputUserName"
+              aria-describedby="emailHelp"
+              placeholder="User Name"
+            />
+            <span
+            class="text-danger"
+            *ngIf="
+              signupForm.controls['userName'].dirty &&
+              signupForm.hasError('required', 'userName')
+            "
+          >
+            *User Name is required
+          </span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <span
+            class="text-danger"
+            *ngIf="
+              signupForm.controls['email'].dirty &&
+              signupForm.hasError('required', 'email')
+            "
+          >
+            *Email Id is required
+          </span>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              formControlName="password"
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+            <span
+              class="text-danger"
+              *ngIf="
+                signupForm.controls['password'].dirty &&
+                signupForm.hasError('required', 'password')
+              "
+            >
+              *Password is required
+            </span>
+          </div>
+          <button type="submit" class="btn btn-primary">SignUp</button>
+        </form>
+        <a routerLink="/login">Already Registered? Click Here</a>
+      </div>
+    </div>
+  </div>
+</div>

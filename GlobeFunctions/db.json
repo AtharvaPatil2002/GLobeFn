@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Atharva",
+      "lastName": "Patil",
+      "userName": "atharva",
+      "password": "aaa"
+    },
+    {
+      "firstName": "aaa",
+      "lastName": "aaa",
+      "userName": "aaa",
+      "email": "aaa",
+      "password": "aaa",
+      "id": 3
+    }
+  ],
+  "signupUsers": [
+    {
+      "firstName": "vb",
+      "lastName": "b",
+      "userName": "b",
+      "email": "b",
+      "password": "b",
+      "id": 1
+    },
+    {
+      "firstName": "aa",
+      "lastName": "aa",
+      "userName": "aa",
+      "email": "a@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "firstName": "AA",
+      "lastName": "aa",
+      "userName": "aaa",
+      "email": "a",
+      "password": "s",
+      "id": 3
+    },
+    {
+      "firstName": "a",
+      "lastName": "a",
+      "userName": "a",
+      "email": "a",
+      "password": "a",
+      "id": 4
+    },
+    {
+      "firstName": "aaa",
+      "lastName": "aaa",
+      "userName": "aaa",
+      "email": "aaa",
+      "password": "aaa",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
